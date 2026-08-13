@@ -1317,7 +1317,8 @@ function getKeys(){return apiKeys.filter(k=>k&&k.key&&k.status!=='fail');}
 // ═══════════════════════════════════════
 // GEMINI
 // ═══════════════════════════════════════
-const GM='gemini-3.1-flash-lite-preview';
+const GM='gemini-3.1-flash-lite
+  ';
 const GURL=k=>'https://generativelanguage.googleapis.com/v1beta/models/'+GM+':generateContent?key='+k;
 async function callGemini(payload,retries){
   retries=retries||0;const keys=getKeys();if(!keys.length)throw new Error(T('toastAddKey'));
